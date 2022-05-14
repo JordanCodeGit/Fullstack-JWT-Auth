@@ -1,0 +1,22 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJNaWxlcyBQcm93ZXIiLCJlbWFpbCI6IlRhaWxzQG1vYml1cy5jb20iLCJpYXQiOjE2NTI0MjcyNjksImV4cCI6MTY1MjQyNzI4OX0.7P-2JCEzQiioSUM6pcU7EtVFHaM5-eWNQ97rjght1jM
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Miles Prower",
+    "email": "Tails@mobius.com",
+    "password": "12345678",
+    "confPassword": "12345678"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
